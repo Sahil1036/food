@@ -305,7 +305,7 @@ footer {
         top: 50px;
         background-color: black;
         width: 100%;
-        /* display: none; */
+         display: none; 
    }
    .form-group{
     width: 85%;
