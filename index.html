@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodmania.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        .nav_logo {
+            width: 200px;
+            background-color: #000000;
+        }
+
+        .nav_logo a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav_logo a img {
+            width: 50px;
+        }
+
+        .nav_logo a span {
+            font-size: 20px;
+        }
+
+        .front {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .front_image {
+            width: 100%;
+            height: 100dvh;
+            background-image: url("2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .front_image {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .front_image img {
+            margin-top: 100px;
+            width: 200px;
+        }
+
+        .front_image h1 {
+            color:green;
+            font-size: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .front_image p {
+            font-weight: bolder;
+            width: 50%;
+            text-align: center;
+        }
+        .front_image button{
+            margin: 10px;
+            font-weight: bolder;
+            width: 93px;
+            height: 36px;
+            border-radius: 20px;
+            border: none;
+            background-color:green;
+        }
+        .front_image button:hover{
+            background-color:rgb(56, 170, 56);
+        }
+        #our-services div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        #our-services div img{
+            margin: 10px;
+            width: 300px;
+            border-radius: 20px;
+        }
+        #our-services h1{
+            text-align: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="front">
+
+                <div class="nav_logo">
+                    <a href="#">
+                        <img src="1.jpg" alt="logo error 404...">
+                        FOOD <span>mania</span>
+                    </a>
+                </div>
+                <div class="nav_menu">
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a class="active" href="#front_img">home</a>
+                </li>
+                <li>
+                    <a href="#food_menu">food menu</a>
+                </li>
+                <li>
+                    <a href="#food_recipes">Food Recipe</a>
+                </li>
+                <li>
+                    <a href="#our-services">our service</a>
+                </li>
+                <li>
+                    <a href="#about_us">about us</a>
+                </li>
+                <li>
+                    <a href="#contact"> contact us</a>
+                </li>
+                <li>
+                    <a href="#" class="nav_login">
+                        <div >
+                            <i class="fa-solid fa-user"></i> log in
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="front_img">
+            <div class="front_image">
+                <img src="logo3.png" alt="">
+                <h1>
+                    Welcome to Foodmania
+                </h1>
+                <p>Where we try to change your Foodweb for the Better </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima esse id eum nihil saepe tempore eos
+                    veritatis pr dolorem, sit voluptate rerum.</p>
+                <button>Learn More</button>
+                <div class="icon">
+                    <i class="fa-brands fa-telegram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="food_menu">
+        <h1 class="center_title">Food Menu</h1>
+        <div id="food_service">
+            <div class="box food_box" data-aos="fade-up">
+                <img src="5.jpg" alt="">
+                <h2 class="center_title2">Food </h2>
+                <p class="price">Price: &#8377;149  <span>3.8 &#9734;</span></p>
+                <p>North indian Lorem ipsum dolor sit. Lorlorem5
+                     em ipsum dolor sit Lorem ipsum dolor sit amet sectetur. </p>
+                <button class="buy">Buy</button>
+            </div>
+            <div class="box food_box" data-aos="fade-up">
+                <img src="6.jpg" alt="">
+                <h2 class="center_title2">Food </h2>
+                <p class="price">Price: &#8377;179  <span>3.8 &#9734;</span></p>
+                <p>North indian Lorem ipsum dolor sit. Lorlorem5
+                     em ipsum dolor sit Lorem ipsum dolor sit amet sectetur. </p>
+                <button class="buy">Buy</button>
+            </div>
+            <div class="box food_box" data-aos="fade-up">
+                <img src="2.jpg" alt="">
+                <h2 class="center_title2">Food </h2>
+                <p class="price">Price: &#8377;129  <span>3.8 &#9734;</span></p>
+                <p>North indian Lorem ipsum dolor sit. Lorlorem5
+                     em ipsum dolor sit Lorem ipsum dolor sit amet sectetur. </p>
+                <button class="buy">Buy</button>
+            </div>
+            <div class="box food_box" data-aos="fade-up">
+                <img src="5.jpg" alt="">
+                <h2 class="center_title2">Food </h2>
+                <p class="price">Price: &#8377;149  <span>3.8 &#9734;</span></p>
+                <p>North indian Lorem ipsum dolor sit. Lorlorem5
+                     em ipsum dolor sit Lorem ipsum dolor sit amet sectetur. </p>
+                <button class="buy">Buy</button>
+            </div>
+            <div class="box food_box" data-aos="fade-up">
+                <img src="6.jpg" alt="">
+                <h2 class="center_title2">Food </h2>
+                <p class="price">Price: &#8377;179  <span>3.8 &#9734;</span></p>
+                <p>North indian Lorem ipsum dolor sit. Lorlorem5
+                     em ipsum dolor sit Lorem ipsum dolor sit amet sectetur. </p>
+                <button class="buy">Buy</button>
+            </div>
+            <div class="box food_box" data-aos="fade-up">
+                <img src="2.jpg" alt="">
+                <h2 class="center_title2">Food </h2>
+                <p class="price">Price: &#8377;129  <span>3.8 &#9734;</span></p>
+                <p>North indian Lorem ipsum dolor sit. Lorlorem5
+                     em ipsum dolor sit Lorem ipsum dolor sit amet sectetur. </p>
+                <button class="buy">Buy</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="food_recipes">
+        <h1 class="center_title">Food Recipes</h1>
+        <div id="services">
+            <div class="box" data-aos="fade-up">
+                <img src="2.jpg" alt="">
+                <h2 class="center_title2">Food </h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <img src="5.jpg" alt="">
+                <h2 class="center_title2">Bulk food</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <img src="6.jpg" alt="">
+                <h2 class="center_title2">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about_us">
+        <div class="about">
+            <h1 class="center_title">About Us</h1>
+            <img src="15.png" alt="">
+            <h2>Welcome to FoodMaina Here you can buy food</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed reiciendis quibusdam dicta suscipit consequatur ipsum nam vero ea! Minus sed, ipsum sint neque sapiente dicta dignissimos expedita labore ex saepe. Officiis sit tempora delectus!</p>
+     
+        <div class="icon">
+            <a href="https://telegram.org/">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+        </div>
+    </div>
+    </section>
+
+    <section id="our-services">
+        <h1>Our Service</h1>
+        <div class="div">
+            <img data-aos="fade-up" src="serving-wedding-table-vintage-style_8353-9577.jpg" alt="">
+            <img data-aos="fade-up" src="18.jpg" alt="">
+            <img data-aos="fade-up"  src="group-friends-eating-restaurant_23-2148006644.jpg" alt="">
+            <img data-aos="fade-up" 
+            src="close-up-smiley-friends-restaurant_23-2148965380.jpg" alt="">    
+            <img data-aos="fade-up" src="16.jpg" alt="">
+            <img data-aos="fade-up" src="17.jpg" alt="">
+            <img data-aos="fade-up"  src="20.jpg" alt="">
+            <img data-aos="fade-up" 
+            src="19.jpg" alt="">    
+        </div>
+    </section>
+   
+    <section id="contact">
+        <h1 class="center_title">Contact Us</h1>
+        <div id="contact-box">
+            <form action="" data-aos="flip-up">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="6"></textarea>
+                </div>
+                <div class="form-group">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.foodmaina.com. All rights reserved!
+        </div>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 500, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 50, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+
+        });
+      </script>
+</body>
+
+</html>
