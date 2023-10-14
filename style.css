@@ -478,7 +478,7 @@ form .login_box{
     align-items: center;
     position: fixed;
     left: 0;
-    right: 50px;
+    right: 60px;
     margin: auto;
     top: 0;
     bottom: 0;
@@ -551,7 +551,7 @@ form .login_box .mid div{
     height: 200px;
     position: fixed;
     left: 0;
-    right: 0;
+    right: 60px;
     top: 0;
     margin: auto;
     bottom: 0;
