@@ -39,3 +39,30 @@ let login = document.querySelector("#login");
 login.addEventListener("click",()=>{
     form.style.display="none";
 });
+
+let list=document.querySelectorAll("ul li");
+let listarr=Array.from(list);
+listarr.forEach((e)=>{
+    e.addEventListener("click",()=>{
+        if(screen.width<930){
+            navbar.style="display:none";
+            menu.forEach((e) => {
+             e.style.transform="none";
+        });
+    }
+    });
+});
+
+let buy=document.getElementsByClassName("buy");
+let box_show=document.getElementsByClassName("box_show");
+let buyarr=Array.from(buy);
+buyarr.forEach((e)=>{
+  e.addEventListener("click",()=>{
+    box_show[0].style="display:flex";
+  });
+});
+
+let cancel=document.querySelector(".box_show button");
+cancel.addEventListener("click",()=>{
+    box_show[0].style="display:none";
+});

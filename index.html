@@ -8,105 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-       
-        .nav_logo {
-            width: 200px;
-            background-color: #000000;
-        }
-
-        .nav_logo a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 25px;
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        .nav_logo a img {
-            width: 50px;
-        }
-
-        .nav_logo a span {
-            font-size: 20px;
-        }
-
-        .front {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .front_image {
-            width: 100dvw;
-            height: 800px;
-            background-image: url("2.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        .front_image {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-        .front_image img {
-            margin-top: 100px;
-            width: 200px;
-        }
-
-        .front_image h1 {
-            color:green;
-            font-size: 50px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        .front_image p {
-            font-weight: bolder;
-            width: 50%;
-            text-align: center;
-        }
-        .front_image button{
-            margin: 10px;
-            font-weight: bolder;
-            width: 93px;
-            height: 36px;
-            border-radius: 20px;
-            border: none;
-            background-color:green;
-        }
-        .front_image button:hover{
-            background-color:rgb(56, 170, 56);
-        }
-        #our-services div{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-        #our-services div img{
-            margin: 10px;
-            width: 300px;
-            border-radius: 20px;
-        }
-        #our-services h1{
-            text-align: center;
-            font-size: 40px;
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <div class="logo_menu">
-            <div class="logo "></div>
-            <div class="logo "></div>
-            <div class="logo "></div>
-        </div>
   
         <nav id="navbar">
             <div class="front">
@@ -139,13 +44,17 @@
                     <a href="#contact"> contact us</a>
                 </li>
                 <li>
-                  
                         <div class="nav_login >
-                            <i class="fa-solid fa-user"></i> log in
+                            <i class="fa-regular fa-user"></i> log in
                         </div>
-                    
                 </li>
             </ul>
+
+            <div class="logo_menu">
+                <div class="logo "></div>
+                <div class="logo "></div>
+                <div class="logo "></div>
+            </div>
         </nav>
     </header>
     <main>
@@ -158,13 +67,25 @@
                 <p>Where we try to change your Foodweb for the Better </p>
                 <p class="hide">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima esse id eum nihil saepe tempore eos
                     veritatis pr dolorem, sit voluptate rerum.</p>
-                <button>Learn More</button>
+                    <a href="#about_us">
+                        <button>Learn More</button>
+                    </a>
                 <div class="icon">
-                    <i class="fa-brands fa-telegram"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <i class="fa-brands fa-x-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook-f"></i>
+                    <a href="https://t.me/desicooking">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                    <a href="https://chat.whatsapp.com/invite/4zWgQ1Wz3pp9feuaOmuBtn">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://twitter.com/FoodieMania">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/myfoodmaniaofficial/?hl=en">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://m.facebook.com/foodmanians/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
                 </div>
             </div>
         </section>
@@ -175,7 +96,7 @@
             <div class="box food_box" data-aos="fade-up">
                 <img src="5.jpg" alt="">
                 <h2 class="center_title2">Food </h2>
-                <p class="price">Price: &#8377;149  <span>3.8 &#9734;</span></p>
+                <p class="price">Price: &#8377;149  <span>4.8 &#9734;</span></p>
                 <p>North indian Lorem ipsum dolor sit. Lorlorem5
                      em ipsum dolor sit Lorem ipsum dolor sit amet sectetur. </p>
                 <button class="buy">Buy</button>
@@ -191,7 +112,7 @@
             <div class="box food_box" data-aos="fade-up">
                 <img src="2.jpg" alt="">
                 <h2 class="center_title2">Food </h2>
-                <p class="price">Price: &#8377;129  <span>3.8 &#9734;</span></p>
+                <p class="price">Price: &#8377;129  <span>5.0 &#9734;</span></p>
                 <p>North indian Lorem ipsum dolor sit. Lorlorem5
                      em ipsum dolor sit Lorem ipsum dolor sit amet sectetur. </p>
                 <button class="buy">Buy</button>
@@ -199,7 +120,7 @@
             <div class="box food_box" data-aos="fade-up">
                 <img src="5.jpg" alt="">
                 <h2 class="center_title2">Food </h2>
-                <p class="price">Price: &#8377;149  <span>3.8 &#9734;</span></p>
+                <p class="price">Price: &#8377;149  <span>4.5 &#9734;</span></p>
                 <p>North indian Lorem ipsum dolor sit. Lorlorem5
                      em ipsum dolor sit Lorem ipsum dolor sit amet sectetur. </p>
                 <button class="buy">Buy</button>
@@ -215,7 +136,7 @@
             <div class="box food_box" data-aos="fade-up">
                 <img src="2.jpg" alt="">
                 <h2 class="center_title2">Food </h2>
-                <p class="price">Price: &#8377;129  <span>3.8 &#9734;</span></p>
+                <p class="price">Price: &#8377;189  <span>3.8 &#9734;</span></p>
                 <p>North indian Lorem ipsum dolor sit. Lorlorem5
                      em ipsum dolor sit Lorem ipsum dolor sit amet sectetur. </p>
                 <button class="buy">Buy</button>
@@ -262,19 +183,19 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed reiciendis quibusdam dicta suscipit consequatur ipsum nam vero ea! Minus sed, ipsum sint neque sapiente dicta dignissimos expedita labore ex saepe. Officiis sit tempora delectus!</p>
      
         <div class="icon">
-            <a href="https://telegram.org/">
+            <a href="https://t.me/desicooking">
                 <i class="fa-brands fa-telegram"></i>
             </a>
-            <a href="">
+            <a href="https://chat.whatsapp.com/invite/4zWgQ1Wz3pp9feuaOmuBtn">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
-            <a href="">
+            <a href="https://twitter.com/FoodieMania">
                 <i class="fa-brands fa-x-twitter"></i>
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/myfoodmaniaofficial/?hl=en">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="">
+            <a href="https://m.facebook.com/foodmanians/">
                 <i class="fa-brands fa-facebook-f"></i>
             </a>
         </div>
@@ -349,6 +270,11 @@
             
         </form>
     
+    </div>
+
+    <div class="box_show">
+        <h1>Your order is book</h1>
+        <button>cancel</button>
     </div>
 
     <script src="script.js"></script>
