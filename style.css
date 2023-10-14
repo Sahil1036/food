@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    transition: all 1s linear -.5s;
 }
 
 nav {
@@ -26,11 +27,12 @@ nav ul li {
     list-style: none;
 }
 
-nav ul li a {
+nav ul li a ,.nav_login{
     font-size: 20px;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
+    cursor: pointer;
 }
 
 nav ul li a:hover {
@@ -43,8 +45,6 @@ nav ul li a:hover {
     justify-content: center;
     align-content: center;
     border-radius: 25px;
-    /* background-color: yellow; */
-    /* background-image: url("14.jpg"); */
 }
 
 .food_box p {
@@ -93,7 +93,6 @@ nav ul li a:hover {
 
 #services,
 #food_service {
-    /* margin-top: 20px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -243,6 +242,9 @@ footer {
 .icon{
     font-size: 30px;
     margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon i{
@@ -268,7 +270,6 @@ footer {
     }
     .front_image{
         width: 100%;
-        height: 600px;
     }
     #about_us {
         width: 100%;
@@ -287,10 +288,10 @@ footer {
         margin: 0 auto;
         align-self: center;
     }
+    
 }
 
 @media only screen and (max-width:930px) {
-   
     header nav{
         width: 100%;
         height: 60px;
@@ -305,7 +306,10 @@ footer {
         top: 50px;
         background-color: black;
         width: 100%;
-         display: none; 
+        display: none;
+   }
+   nav ul li a{
+    font-size: 25px;
    }
    .form-group{
     width: 85%;
@@ -318,32 +322,125 @@ footer {
    }
    .front_image h1{
     text-align: center;
-    font-size: 30px;
    }
-   
-.box {
-    width: 250px;
-}
 
-.box img{
-    width: 250px;
-}
-
-   .nav_menu{
-    visibility: visible;
-    /* display: block; */
+   .hide{
+    display: none;
    }
+    
+    .box {
+        width: 250px;
+    }
+
+    .box img{
+        width: 250px;
+    }
+
+    .logo{
+        visibility: visible;
+    }
 }
 
-.nav_menu {
+.logo_menu {
+    z-index: 2;
     width: 50px;
     height: 50px;
-    background-image: url("21.png");
-    background-size: cover;
-   /* display: none; */
-   visibility: hidden;
     position: fixed;
     top: 10px;
     right: 20px;
-    color: wheat;
+    visibility: hidden;
+   
+}
+
+
+
+
+.logo {
+    width: 30px;
+    height: 5px;
+    background-color: whitesmoke;
+    margin: 5px;
+    border-radius: 25%;
+}
+
+
+form .login_box{
+    color: whitesmoke;
+    background: rgba(18, 19, 18, 0.8);
+    border-radius: 15px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    display: none;
+    z-index: 2;
+}
+
+form .login_box h2 {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+form .login_box input,
+form .login_box button {
+    width: 250px;
+    height: 40px;
+    background: rgba(74, 81, 74, 0.6);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+form .login_box button {
+    background-color: green;
+}
+
+form .login_box button:hover {
+    background-color: rgb(56, 170, 56);
+}
+
+form .login_box .mid {
+    width: 250px;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+form .login_box .mid input{
+    width: 15px;
+}
+
+form .login_box .mid div{
+    display: flex;
+    width: 100px;
+}
+
+.login_box .mid input {
+    width: 20px;
+    height: 20px;
+    background: rgba(74, 81, 74, 0.6);
+}
+
+
+.login_box a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.login_box a:hover{
+    color: rgb(66, 67, 66);
+    color: rgb(56, 170, 56);
+}
+
+.login_box p a{
+    font-size: 20px;
 }

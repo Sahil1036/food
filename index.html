@@ -38,8 +38,8 @@
         }
 
         .front_image {
-            width: 100%;
-            height: 100dvh;
+            width: 100dvw;
+            height: 800px;
             background-image: url("2.jpg");
             background-size: cover;
             background-repeat: no-repeat;
@@ -102,18 +102,23 @@
 
 <body>
     <header>
-        <nav>
+        <div class="logo_menu">
+            <div class="logo "></div>
+            <div class="logo "></div>
+            <div class="logo "></div>
+        </div>
+  
+        <nav id="navbar">
             <div class="front">
-
                 <div class="nav_logo">
                     <a href="#">
                         <img src="1.jpg" alt="logo error 404...">
                         FOOD <span>mania</span>
                     </a>
                 </div>
-                <div class="nav_menu">
-                </div>
             </div>
+            
+             
             <ul>
                 <li>
                     <a class="active" href="#front_img">home</a>
@@ -134,11 +139,11 @@
                     <a href="#contact"> contact us</a>
                 </li>
                 <li>
-                    <a href="#" class="nav_login">
-                        <div >
+                  
+                        <div class="nav_login >
                             <i class="fa-solid fa-user"></i> log in
                         </div>
-                    </a>
+                    
                 </li>
             </ul>
         </nav>
@@ -151,7 +156,7 @@
                     Welcome to Foodmania
                 </h1>
                 <p>Where we try to change your Foodweb for the Better </p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima esse id eum nihil saepe tempore eos
+                <p class="hide">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima esse id eum nihil saepe tempore eos
                     veritatis pr dolorem, sit voluptate rerum.</p>
                 <button>Learn More</button>
                 <div class="icon">
@@ -325,7 +330,28 @@
         </div>
     </footer>
 
-    <!-- <script src="script.js"></script> -->
+    <div class="extra_login">
+        <form action="Me.php">
+            <div class="login_box">
+                <h2>Login</h2>
+            <input type="text" placeholder="Email or phone number" required>
+            <input type="password" placeholder="Password" required>
+            <button id="login"> Login </button>
+            <div class="mid">
+                <div>
+                    <input type="checkbox">
+                    <p>Remember me</p>
+                </div>
+                <a href="#">Need help?</a>
+            </div>
+            <p>New to Here? <a href="#">Sign up now</a></p>
+            </div>
+            
+        </form>
+    
+    </div>
+
+    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
