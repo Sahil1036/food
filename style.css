@@ -293,7 +293,7 @@ footer {
 
 @media only screen and (max-width:930px) {
     header nav{
-        width: 100%;
+        width: 90dvw;
         height: 60px;
         justify-content: space-between;
     }
@@ -347,7 +347,7 @@ footer {
     height: 50px;
     position: fixed;
     top: 10px;
-    right: 50px;
+    right: 30px;
     visibility: hidden;
    
 }
