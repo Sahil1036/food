@@ -44,7 +44,7 @@ let list=document.querySelectorAll("ul li");
 let listarr=Array.from(list);
 listarr.forEach((e)=>{
     e.addEventListener("click",()=>{
-        if(screen.width<360){
+        if(screen.width<400){
             navbar.style="display:none";
             menu.forEach((e) => {
              e.style.transform="none";
