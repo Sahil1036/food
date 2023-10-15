@@ -40,6 +40,7 @@ login.addEventListener("click",()=>{
     form.style.display="none";
 });
 
+/*
 let list=document.querySelectorAll("ul li");
 let listarr=Array.from(list);
 listarr.forEach((e)=>{
@@ -52,6 +53,7 @@ listarr.forEach((e)=>{
     }
     });
 });
+*/
 
 let buy=document.getElementsByClassName("buy");
 let box_show=document.getElementsByClassName("box_show");
